@@ -1,0 +1,34 @@
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+    --background:#EAF2FD;
+}
+
+.formacion{
+    background-color: var(--background);
+   text-align: center;
+   padding-top: 20px;
+   margin-top: 10px;
+   display: grid;
+   width: 100%;
+
+}
+
+
+.formacion__lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+ 
+}
+
+.formacion__lista__cursos{
+    border: blue solid;
+    width: 200px;
+    margin: 10px 10px;
+}
+

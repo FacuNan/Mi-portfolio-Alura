@@ -1,0 +1,36 @@
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+    --background:#EAF2FD;
+}
+
+.proyectos{
+    text-align: center;
+    background: var(--background);
+   margin-top: 10px;
+}
+.proyectos__informacion{
+    display:flex;
+    height:206px;
+    margin:10px 20px;
+}
+
+.proyectos__imagen{
+border: red solid;
+width:60%;
+display: flex;
+justify-content: center;
+
+}
+
+.proyectos__imagen img{
+    width: 80%;
+    height: 100%;
+}
+
+.proyectos__descripcion{
+    border: blue solid;
+    width:40%;
+}
