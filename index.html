@@ -15,14 +15,9 @@
     <link rel="stylesheet" href="./CSS/proyectos.css">
     <link rel="icon" type="image/png" href="./assets/rocket.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
-    rel="stylesheet"
-  />
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    rel="stylesheet"
-  />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -32,8 +27,8 @@
 
                 <h2 class="menu-contenido__nombre">Facundo Comercio</h2>
 
-                <nav class="menu-nav" >
-                    <ul class="menu-nav_ul">
+                <nav class="menu-nav">
+                    <ul class="menu-nav_ul" data-menu>
                         <li class="menu-nav_lista">Inicio</li>
                         <li class="menu-nav_lista">Sobre Mi</li>
                         <li class="menu-nav_lista">Skills</li>
@@ -42,6 +37,7 @@
                         <li class="menu-nav_lista">Contacto</li>
                         <li class="menu-nav_lista">Footer</li>
                         <li><a href="./login.html"><button class=" btn btn-primary">Login</button></a></li>
+                        <li data-li></li>
                     </ul>
                 </nav>
             </div>
@@ -50,17 +46,10 @@
 
     <main>
         <section class="informacion">
-            <div class="informacion-fotoPerfil">
-                <img class="informacion-fotoPerfil_img"
-                    src="https://media-exp1.licdn.com/dms/image/C4E03AQFMF5NQC591zw/profile-displayphoto-shrink_800_800/0/1658452598831?e=1672272000&v=beta&t=0_wXli-CoWhYeiutjgcdd4G54SinVL-j_PXbkp8yVUo">
+            <div class="informacion-fotoPerfil" data-foto-perfil>
+
             </div>
-            <div class="informacion-biografia">
-
-                <h1>Mi nombre es Facundo comercio</h1>
-                <p>Soy desarrollador full stack en busca de mi primer experiencia laboral para poner en práctica mis
-                    conociminetos aprendidos en Alura Latam</p>
-
-
+            <div class="informacion-biografia" data-biografia>
 
                 <nav class="informacion-redesSociales_nav">
                     <ul class="informacion-redesSociales_ul">
@@ -98,147 +87,45 @@
 
         <section class="skills">
             <h1>Skills</h1>
-            <nav class="skills-nav">
-                <input type="button" value="agregar" class="skills-nav_button-agregar btn btn-info"  data-agregar >
+            <nav class="skills-nav" data-nav>
+                <a href="http://127.0.0.1:5500/agregarSkilll.html"><input type="button" value="agregar"
+                        class="skills-nav_button-agregar btn btn-info " data-agregar>
+                    <ul class="skills-ul" data-ul>
+                </a>
 
-                <input type="text" data-input>
-                <ul class="skills-ul" >
-                    <li skills class="skills-li">
-                        <article class="skills-habilidad"data-nav>
-                            <h1>MYSQL</h1>
-                        </article>
-                    </li>
-
-                    <li class="skills-li">
-                        <article class="skills-habilidad">
-                            <h1>MYSQL</h1>
-                        </article>
-                    </li>
-
-                    <li class="skills-li">
-                        <article class="skills-habilidad">
-                            <h1>MYSQL</h1>
-                        </article>
-                    </li>
-
-                    <li class="skills-li">
-                        <article class="skills-habilidad">
-                            <h1>MYSQL</h1>
-                        </article>
-                    </li>
-
-                    <li class="skills-li">
-                        <article class="skills-habilidad">
-                            <h1>MYSQL</h1>
-                        </article>
-                    </li>
-
-                    <li class="skills-li">
-                        <article class="skills-habilidad">
-                            <h1>MYSQL</h1>
-                        </article>
-                    </li>
                 </ul>
             </nav>
 
         </section>
 
         <section class="formacion">
+
             <h1 class="formacion__titulo">Formacion</h1>
-            <ul class="formacion__lista">
-               
-                <li class="formacion__lista__cursos">
-                    <div class="formacion__lista__cursos__item">
-                        <img src="https://www.aluracursos.com/assets/img/alura-share.1647533644.png" alt=""
-                            width="100px ">
-                        <h1>Alura</h1>
-                    </div>
-                </li>
-                
-
-                <li class="formacion__lista__cursos">
-                    <div class="formacion__lista__cursos__item">
-                        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/sliderimage1/1666227203/banner-ok-argentina-programa.jpg"
-                            alt="" width="200px">
-                        <h1>ARg Programa</h1>
-
-                    </div>
-                </li>
+            <a href="http://127.0.0.1:5500/Formularios/agregar/agregarFormacion.html"><input type="button"
+                    value="agregar" class="skills-nav_button-agregar btn btn-info " data-agregar>
+                <ul class="skills-ul" data-ul>
+            </a>
+            <ul class="formacion__lista" data-lista>
 
 
-                <li class="formacion__lista__cursos">
-
-                    <div class="formacion__lista__cursos__item">
-
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UNLP_Logo_%28cropped%29.svg/1200px-UNLP_Logo_%28cropped%29.svg.png"
-                            alt="" width="100px">
-                        <h1>UNLP</h1>
-                    </div>
-                </li>
-
-                
-                <li class="formacion__lista__cursos">
-                    <div class="formacion__lista__cursos__item">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UNLP_Logo_%28cropped%29.svg/1200px-UNLP_Logo_%28cropped%29.svg.png"
-                            alt="" width="100px">
-                        <h1>UNLP</h1>
-                    </div>
-                </li>
-
-                
-                <li class="formacion__lista__cursos">
-
-                    <div class="formacion__lista__cursos__item">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UNLP_Logo_%28cropped%29.svg/1200px-UNLP_Logo_%28cropped%29.svg.png"
-                            alt="" width="100px">
-                        <h1>UNLP</h1>
-                    </div>
-                </li>
             </ul>
         </section>
 
-        <section class="proyectos">
+        <section class="proyectos" data-proyectos>
             <h1>Proyectos</h1>
 
-            <article class="proyectos__informacion">
-            <div class="proyectos__imagen">
-                <img src="https://user-images.githubusercontent.com/91544872/157673573-5e781ce9-601c-4ea3-9db1-b60bebf717aa.png" alt="">
-               </div>
-            <div class="proyectos__descripcion">
-                <h1>Encriptador de texto</h1>
-                <p>Desafio AluraLatam</p>
-            </div>
-          
-        </article>
+            
 
-        <article class="proyectos__informacion">
-            <div class="proyectos__imagen">
-                <img src="https://user-images.githubusercontent.com/91544872/157673573-5e781ce9-601c-4ea3-9db1-b60bebf717aa.png" alt="">
-               </div>
-            <div class="proyectos__descripcion">
-                <h1>Encriptador de texto</h1>
-                <p>Desafio AluraLatam</p>
-            </div>
-          
-        </article>
-
-        <article class="proyectos__informacion">
-            <div class="proyectos__imagen">
-                <img src="https://user-images.githubusercontent.com/91544872/157673573-5e781ce9-601c-4ea3-9db1-b60bebf717aa.png" alt="">
-               </div>
-            <div class="proyectos__descripcion">
-                <h1>Encriptador de texto</h1>
-                <p>Desafio AluraLatam</p>
-            </div>
-          
-        </article>
+        
         </section>
     </main>
     <footer>
 
     </footer>
-
-    <script src="./Javascript/script.js" type="module"></script>
+    <script src="./controllers/skillsController/skillsControllers.js" type="module"></script>
+    <script src="./controllers/perfil/perfil-controller.js" type="module"></script>
+    <script src="./controllers/formacionController/formacionController.js" type="module"></script>
+    <script src="./controllers/proyectos/proyectosController.js" type="module"></script>
 </body>
 
 </html>

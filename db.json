@@ -1,0 +1,47 @@
+{
+  "perfil": [
+    {
+      "id": 1,
+      "nombre": "Facundo",
+      "apellido": "Comercio ",
+      "img": "https://media-exp1.licdn.com/dms/image/C4E03AQFMF5NQC591zw/profile-displayphoto-shrink_800_800/0/1658452598831?e=1672272000&v=beta&t=0_wXli-CoWhYeiutjgcdd4G54SinVL-j_PXbkp8yVUo",
+      "descripcion": "Soy desarrollador full stack en busca de mi primer experiencia laboral para poner en práctica mis conociminetos aprendidos en Alura Latam"
+    }
+  ],
+  "skills": [
+    {
+      "skill": "Angular",
+      "img": "facundocomercio1991@gmail.com",
+      "id": "2d5a5360-d08f-492f-a275-9df27fc9b089"
+    },
+    {
+      "skill": "React",
+      "img": "facundocomercio@outlook.com",
+      "id": "1840e60f-473f-4a20-aaf1-f4493d4ecc9c"
+    },
+    {
+      "skill": "React",
+      "img": "corigliano017@gmail",
+      "id": "4eae0a04-8a1e-4b63-925d-95a41526821a"
+    }
+  ],
+  "formacion": [
+    {
+      "formacion": "Alura Latam",
+      "img": "https://aulaairbus.etsiae.upm.es/wp-content/uploads/2019/09/logo-formaci%C3%B3n-3-180x180.png",
+      "id": "8aa8cbac-a1f2-4896-84df-2e25c04893e0"
+    }
+  ],
+
+  
+  "proyectos": [
+    {
+      "titulo":"Encriptador de texto",
+      "descripcion":"Desafio realizado para Alura Latam",
+      "URL":"link",
+      "img":"link",
+      "id":"1"
+
+    }
+  ]
+}

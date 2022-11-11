@@ -3,7 +3,7 @@
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
     --cor-de-link: #000;
-    --background:#EAF2FD;
+    --background: #EAF2FD;
 }
 
 
@@ -12,7 +12,8 @@
     text-align: center;
     align-items: center;
     display: flex;
-
+    padding: 20px;
+   
 }
 
 .informacion-fotoPerfil_img {
@@ -23,14 +24,15 @@
 
 .informacion-biografia {
     justify-content: center;
+    color:#F5F5F5;
 }
 
 
 .informacion-redesSociales_nav {
     margin-top: 30px;
     width: 60%;
-    margin-left:100px;
- 
+    margin-left: 100px;
+
 }
 
 .informacion-redesSociales_ul {
@@ -53,8 +55,8 @@
     cursor: pointer;
 }
 
-@media(max-width:600px){
-.informacion{
-    flex-direction: column;
-}
+@media(max-width:600px) {
+    .informacion {
+        flex-direction: column;
+    }
 }

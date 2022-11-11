@@ -1,46 +1,55 @@
-:root{
+:root {
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
     --cor-de-link: #000;
-    --background:#EAF2FD;
+    --background: #EAF2FD;
 }
 
-.skills{
+.skills {
     background-color: var(--background);
     text-align: center;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
     padding-right: 30px;
-  
+
 }
 
-.skills-ul{
+.skills-ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around
+    justify-content: center;
+}
+
+.skills-li {
+    margin: 5px;
 }
 
 
 
-.skills-habilidad{
+.skills-habilidad {
     width: 150px;
     height: 150px;
     background-color: lightblue;
     margin-top: 10px;
-
+    display: flex;
+    flex-direction: column;
+ 
 }
 
 .trash{
-    cursor: pointer;
+    text-align: end;
+    width: 50px;
 }
 
 
-@media (max-width:600px){
-    
-    .skills-habilidad{
+
+
+@media (max-width:600px) {
+
+    .skills-habilidad {
         justify-content: space-around;
     }
 }

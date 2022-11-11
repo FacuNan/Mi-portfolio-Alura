@@ -6,16 +6,20 @@
 }
 body{
     background-color: darkslategrey;
+    
 }
 
 .menu{
-    padding: 10px;;
+    padding: 10px;
+    
 }
 
 .menu-contenido{
     display: flex;
     justify-content:space-between;
-
+    color:#F5F5F5;
+    align-items: center;
+    height: 80px;
 }
 
 .menu-nav .menu-nav_ul{
@@ -27,7 +31,7 @@ list-style: none;
 
 .menu-nav .menu-nav_ul li{
 
-width:80px;
+width:70px;
 height: 19px;
 font-family: 'Raleway';
 font-style: normal;
