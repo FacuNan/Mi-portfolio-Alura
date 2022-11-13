@@ -35,6 +35,6 @@ informacionProyectos.listaFormacion().then((data)=>{
     })
 })
 
-console.log(crearFormacion())
+
 
 

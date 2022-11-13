@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
         rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/hobbies.css">
 </head>
 
 <body>
@@ -85,14 +86,28 @@
             </p>
         </section>
 
+        <section class="hobbies" data-hobbies>
+            <h1>Hobbies</h1>
+            <a href="http://127.0.0.1:5500/Formularios/agregar/agregarHobbie.html"><input type="button"
+                value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
+            </a>
+            <nav class="hobbies__contenido-hobbies">
+                <ul class="hobbies__contenido-lista" data-hobbies-lista>
+        
+                  
+                </ul>
+
+            </nav>
+        </section>
+
         <section class="skills">
             <h1>Skills</h1>
             <nav class="skills-nav" data-nav>
                 <a href="http://127.0.0.1:5500/agregarSkilll.html"><input type="button" value="agregar"
-                        class="skills-nav_button-agregar btn btn-info " data-agregar>
-                    <ul class="skills-ul" data-ul>
-                </a>
+                        class="skills-nav_button-agregar btn btn-info login" data-agregar>
 
+                </a>
+                <ul class="skills-ul" data-ul>
                 </ul>
             </nav>
 
@@ -102,9 +117,10 @@
 
             <h1 class="formacion__titulo">Formacion</h1>
             <a href="http://127.0.0.1:5500/Formularios/agregar/agregarFormacion.html"><input type="button"
-                    value="agregar" class="skills-nav_button-agregar btn btn-info " data-agregar>
-                <ul class="skills-ul" data-ul>
-            </a>
+                    value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
+                </a>
+
+            
             <ul class="formacion__lista" data-lista>
 
 
@@ -113,10 +129,13 @@
 
         <section class="proyectos" data-proyectos>
             <h1>Proyectos</h1>
+            <a href="http://127.0.0.1:5500/Formularios/agregar/agregarProyectos.html"><input type="button"
+                    value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
 
-            
+            </a>
 
-        
+
+
         </section>
     </main>
     <footer>
@@ -126,6 +145,10 @@
     <script src="./controllers/perfil/perfil-controller.js" type="module"></script>
     <script src="./controllers/formacionController/formacionController.js" type="module"></script>
     <script src="./controllers/proyectos/proyectosController.js" type="module"></script>
+    <script src="./controllers/hobbies/hobbiesController.js" type="module"></script>
+    <script src="./controllers/usuario/usuarioRegtistrado.js" type = "module"></script>
+ 
+ 
 </body>
 
 </html>

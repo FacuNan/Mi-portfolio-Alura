@@ -8,6 +8,8 @@ const traerProyecto = (titulo, descripcion, url, img, id) => {
     const contenido = `
 
     <div class="proyectos__imagen">
+    <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
+    <a href='http://127.0.0.1:5500/Formularios/Edicion/editarProyecto.html?id=${id}'><i class='fa fa-pen'></i></a>
         <img src="${img}"
             alt="">
     </div>
@@ -17,12 +19,21 @@ const traerProyecto = (titulo, descripcion, url, img, id) => {
     </div>`
 
     article.innerHTML = contenido
+
+    const eliminar = article.querySelector('.trash')
+
+    eliminar.addEventListener('click', ()=>{
+
+    const id= eliminar.id
+        serviceInformacion.eliminarProyecto(id).then(()=>{
+            window.location.href = 'http://127.0.0.1:5500/index.html'
+        })
+    })
    
     return article
 
 }
 
-console.log(traerProyecto())
 const proyecto = document.querySelector('[data-proyectos]')
 
 serviceInformacion.listaProyectos().then((data)=>{

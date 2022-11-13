@@ -3,31 +3,32 @@
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
     --cor-de-link: #000;
-    --background:#EAF2FD;
+    --background: #EAF2FD;
 }
 
-.formacion{
+.hobbies {
     background-color: var(--background);
-   text-align: center;
-   padding-top: 20px;
-   margin-top: 10px;
-   display: grid;
-   width: 100%;
-
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-
-.formacion__lista{
+.hobbies__contenido-lista {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px;
- 
 }
 
-.formacion__lista__cursos{
-    border: blue solid;
+.hobbies__contenido-items {
+    border: solid green;
+    margin: 10px;
     width: 200px;
-    margin: 10px 10px;
+    height: 200px;
+}
+
+.hobbies__contenido-items img{
+    width: 100%;
 }
 

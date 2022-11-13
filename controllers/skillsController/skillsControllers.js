@@ -7,18 +7,18 @@ const estructuraLista = (skill, img, id) => {
     const contenido =
         `<article class="skills-habilidad">
     <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
-    <a href='http://127.0.0.1:5500/editarSkill.html?id=${id}'><i class='fa fa-pen'></i></a>
+    <a href='http://127.0.0.1:5500/editarSkill.html?id=${id}'><i class='fa fa-pen'data-agregar></i></a>
     <h1>${skill}</h1>
 </article>`
 
     li.innerHTML = contenido;
     const btn = li.querySelector('.trash');
 
-    console.log(btn)
+  
     btn.addEventListener('click', () => {
         const id = btn.id
-        skillsService.eliminarSkill(id).then(respuesta =>{
-            console.log(respuesta);
+        skillsService.eliminarSkill(id).then(() =>{
+            console.log('excelente');
         }).catch(err=>alert('Ocurrio un error'));
     })
     return li

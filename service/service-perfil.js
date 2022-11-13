@@ -15,7 +15,7 @@ const actualizarPerfil = (id, nombre, apellido, img, descripcion) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ id, nombre, apellido, img, descripcion })
-    })
+    }).then((respuesta)=> console.log(respuesta))
 }
 
 
