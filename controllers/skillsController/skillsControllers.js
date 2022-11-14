@@ -7,14 +7,17 @@ const estructuraLista = (skill, img, id) => {
     li.classList.add('skills-li')
     const contenido =
         `<article class="skills-habilidad">
+        <div class="btn-edicion">
     <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
-    <a href='http://127.0.0.1:5500/editarSkill.html?id=${id}'><i class='fa fa-pen'data-agregar *ngIf="login()"></i></a>
+    <a class="icono-edicion btn btn-info"href='http://127.0.0.1:5500/editarSkill.html?id=${id}'><i class='fa fa-pen edit'></i></a>
+    </div>
+    <img src ="${img}">
     <h1>${skill}</h1>
 </article>`
 
     li.innerHTML = contenido;
     const btn = li.querySelector('.trash');
-    const edicion = li.querySelector('.fa-pen')
+    const edicion = li.querySelector('.icono-edicion')
 
     if(login() == true){
         btn.style.display="inherit"

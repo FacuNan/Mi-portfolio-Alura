@@ -10,19 +10,21 @@
     background-color: var(--background);
     text-align: center;
     padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
-    text-align: center;
+    margin:5px 0px;
+    border-radius: 5px;
+   
 }
 
 .hobbies__contenido-lista {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+ 
 }
 
 .hobbies__contenido-items {
-    border: solid green;
+    background-color: rgba(0, 5, 15, 0.5);
+    position: relative;
     margin: 10px;
     width: 200px;
     height: 200px;

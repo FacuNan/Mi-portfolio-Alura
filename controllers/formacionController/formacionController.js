@@ -8,8 +8,10 @@ const crearFormacion = (id, img, formacion)=>{
     formaciones.classList.add('formacion__lista__cursos');
     const contenido = `
     <div class="formacion__lista__cursos__item">
+    <div class="btn-edicion">
     <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
-    <a href='http://127.0.0.1:5500/Formularios/Edicion/editarFormacion.html?id=${id}'><i class='fa fa-pen'></i></a>
+    <a class="icono-edicion btn btn-info" href='http://127.0.0.1:5500/Formularios/Edicion/editarFormacion.html?id=${id}'><i class='fa fa-pen edit'></i></a>
+    </div>
         <img src="${img}" alt=""
             width="100px ">
         <h1>${formacion}</h1>
@@ -18,7 +20,7 @@ const crearFormacion = (id, img, formacion)=>{
 formaciones.innerHTML=contenido
 
 const btn = formaciones.querySelector(".trash")
-const edicion= formaciones.querySelector(".fa-pen")
+const edicion= formaciones.querySelector(".icono-edicion")
 
 if(login() == true){
     btn.style.display="inherit"

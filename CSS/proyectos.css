@@ -3,34 +3,55 @@
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
     --cor-de-link: #000;
-    --background:#EAF2FD;
+    --background: #EAF2FD;
 }
 
-.proyectos{
+.proyectos {
     text-align: center;
     background: var(--background);
-   margin-top: 10px;
-}
-.proyectos__informacion{
-    display:flex;
-    height:206px;
-    margin:10px 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.proyectos__imagen{
-border: red solid;
-width:60%;
-display: flex;
-justify-content: center;
+.proyectos__informacion {
+    display: flex;
+    width: 800px;
+    height: 206px;
+    margin: 10px 20px;
+    box-shadow: 10px 10px 8px 5px #000;
 
 }
 
-.proyectos__imagen img{
-    width: 80%;
+.proyectos__imagen {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.proyectos__imagen img {
+    width: 100%;
     height: 100%;
 }
 
-.proyectos__descripcion{
-    border: blue solid;
-    width:40%;
+.proyectos__descripcion {
+
+    position: relative;
+    width: 40%;
+    background-color: darkgrey;
+}
+
+.btn-edicion {
+    width: 100%;
+}
+
+
+@media(max-width:600px){
+    .proyectos__informacion{
+        width:100%;
+    }
 }

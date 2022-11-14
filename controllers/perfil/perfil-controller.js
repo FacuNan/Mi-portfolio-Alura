@@ -1,4 +1,5 @@
 import { informacionPerfil } from "../../service/service-perfil.js";
+import { serviceUsuario } from "../../service/usuario.js";
 import { login } from "../usuario/usuarioRegtistrado.js";
 
 
@@ -6,20 +7,21 @@ import { login } from "../usuario/usuarioRegtistrado.js";
 const infoHTML = (id, nombre, apellido, descripcion) => {
 
     const li = document.querySelector('[data-li]');
-    const btn = ` <li><a href="http://127.0.0.1:5500/Perfil(Html)/editarPerfil.html?id=${id}"><i class='fa fa-pen'></i></a></li>`
+    const btn = `<li class="lista"><a href="http://127.0.0.1:5500/Perfil(Html)/editarPerfil.html?id=${id}"><button class="btn btn-success"><i class='fa fa-pen'></i></button></a></li>`
 
-    
-  
 
     li.innerHTML = btn;
-    const edicion =li.querySelector('.fa-pen')
-
-    if(login() == true){
-        edicion.style.display="inherit"
-      }else{
-          
-          edicion.style.display="none"
-      }
+    const logeo = document.querySelector('[data-login]')
+    const logout = document.querySelector('[data-logout]')
+    if (login() == true) {
+        li.style.display = "inherit"
+        logeo.style.display = "none"
+        logout.style.display = "inherit"
+    } else {
+        li.style.display = "none"
+        logeo.style.display = "inherit"
+        logout.style.display = "none"
+    }
 
     const contenido = `<h1>Mi nombre es ${nombre} ${apellido}</h1>
 <p>${descripcion}</p>`
@@ -51,3 +53,6 @@ informacionPerfil.infoPerfil().then((data) => {
         infoHTML(id, nombre, apellido, descripcion);
     })
 })
+
+
+

@@ -9,12 +9,16 @@ const traerProyecto = (titulo, descripcion, url, img, id) => {
     const contenido = `
 
     <div class="proyectos__imagen">
-    <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
-    <a href='http://127.0.0.1:5500/Formularios/Edicion/editarProyecto.html?id=${id}'><i class='fa fa-pen'></i></a>
-        <img src="${img}"
+    
+    <img src="${img}"
             alt="">
     </div>
     <div class="proyectos__descripcion">
+    <div class="btn-edicion">
+    <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
+    <a class="icono-edicion btn btn-info" href='http://127.0.0.1:5500/Formularios/Edicion/editarProyecto.html?id=${id}'><i class='fa fa-pen edit'></i></a>
+        </div>
+
         <h1>${titulo}</h1>
         <p>${descripcion}</p>
     </div>`
@@ -22,7 +26,7 @@ const traerProyecto = (titulo, descripcion, url, img, id) => {
     article.innerHTML = contenido
 
     const eliminar = article.querySelector('.trash')
-    const edicion = article.querySelector('.fa-pen')
+    const edicion = article.querySelector('.icono-edicion')
 
     if(login() == true){
         eliminar.style.display="inherit"

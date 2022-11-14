@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/hobbies.css">
 </head>
@@ -30,14 +31,17 @@
 
                 <nav class="menu-nav">
                     <ul class="menu-nav_ul" data-menu>
-                        <li class="menu-nav_lista">Inicio</li>
-                        <li class="menu-nav_lista">Sobre Mi</li>
-                        <li class="menu-nav_lista">Skills</li>
-                        <li class="menu-nav_lista">Experiencia</li>
-                        <li class="menu-nav_lista">Proyecto</li>
-                        <li class="menu-nav_lista">Contacto</li>
-                        <li class="menu-nav_lista">Footer</li>
-                        <li><a href="./login.html"><button class=" btn btn-primary">Login</button></a></li>
+                        <li class="menu-nav_lista"><a href="#inicio">Inicio</a></li>
+                        <li class="menu-nav_lista"><a href="#sobre-mi"> Sobre Mi</a></li>
+                        <li class="menu-nav_lista"><a href="#skills">Skills</a></li>
+                        <li class="menu-nav_lista"><a href="#hobbies">Hobbies</a></li>
+                        <li class="menu-nav_lista"><a href="#formacion">Formacion</a></li>
+                        <li class="menu-nav_lista"><a href="#proyectos">Proyectos</a></li>
+                        <li class="menu-nav_lista"><a href="#footer"> Footer</a></li>
+                        <li data-login><a href="./login.html"><button class=" btn btn-outline-primary"><i
+                                        class="fa-solid fa-right-to-bracket"></i></button></a></li>
+                        <li data-logout><button class=" btn btn-outline-danger"><i
+                                    class="fa-solid fa-right-to-bracket"></i></button></li>
                         <li data-li></li>
                     </ul>
                 </nav>
@@ -46,7 +50,7 @@
     </header>
 
     <main>
-        <section class="informacion">
+        <section class="informacion" id="inicio">
             <div class="informacion-fotoPerfil" data-foto-perfil>
 
             </div>
@@ -74,7 +78,7 @@
             </div>
         </section>
 
-        <section class="sobre-mi">
+        <section class="sobre-mi" id="sobre-mi">
             <h1>Sobre mi</h1>
             <p>/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
                 dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
@@ -86,21 +90,21 @@
             </p>
         </section>
 
-        <section class="hobbies" data-hobbies>
+        <section class="hobbies" id="hobbies" data-hobbies>
             <h1>Hobbies</h1>
-            <a href="http://127.0.0.1:5500/Formularios/agregar/agregarHobbie.html"><input type="button"
-                value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
+            <a href="http://127.0.0.1:5500/Formularios/agregar/agregarHobbie.html"><input type="button" value="agregar"
+                    class="skills-nav_button-agregar btn btn-info login " data-agregar>
             </a>
             <nav class="hobbies__contenido-hobbies">
                 <ul class="hobbies__contenido-lista" data-hobbies-lista>
-        
-                  
+
+
                 </ul>
 
             </nav>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <h1>Skills</h1>
             <nav class="skills-nav" data-nav>
                 <a href="http://127.0.0.1:5500/agregarSkilll.html"><input type="button" value="agregar"
@@ -113,21 +117,21 @@
 
         </section>
 
-        <section class="formacion">
+        <section class="formacion" id="formacion">
 
             <h1 class="formacion__titulo">Formacion</h1>
             <a href="http://127.0.0.1:5500/Formularios/agregar/agregarFormacion.html"><input type="button"
                     value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
-                </a>
+            </a>
 
-            
+
             <ul class="formacion__lista" data-lista>
 
 
             </ul>
         </section>
 
-        <section class="proyectos" data-proyectos>
+        <section class="proyectos" data-proyectos id="proyectos">
             <h1>Proyectos</h1>
             <a href="http://127.0.0.1:5500/Formularios/agregar/agregarProyectos.html"><input type="button"
                     value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
@@ -146,9 +150,10 @@
     <script src="./controllers/formacionController/formacionController.js" type="module"></script>
     <script src="./controllers/proyectos/proyectosController.js" type="module"></script>
     <script src="./controllers/hobbies/hobbiesController.js" type="module"></script>
-    <script src="./controllers/usuario/usuarioRegtistrado.js" type = "module"></script>
- 
- 
+    <script src="./controllers/usuario/usuarioRegtistrado.js" type="module"></script>
+    <script src="./controllers/usuario/logout.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/3eb2a5ace8.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

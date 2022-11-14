@@ -4,15 +4,17 @@ import { login } from "../usuario/usuarioRegtistrado.js"
 const agregarLinea = (id, img, hobbie) => {
     const tarjeta = document.createElement('li')
     tarjeta.classList.add('hobbies__contenido-items')
-    const contenido = `<i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
-    <a href='http://127.0.0.1:5500/Formularios/Edicion/editarHobbie.html?id=${id}'><i class='fa fa-pen'></i></a>
+    const contenido = `
+    <div class="btn-edicion">
+    <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}'></i>
+    <a class="icono-edicion btn btn-info"href='http://127.0.0.1:5500/Formularios/Edicion/editarHobbie.html?id=${id}'><i class='fa fa-pen edit'></i></a></div>
     <img src="${img}" alt="">
     <h3>${hobbie}</h3>`
 
     tarjeta.innerHTML = contenido
 
     const elimina = tarjeta.querySelector('.trash')
-    const edicion = tarjeta.querySelector('.fa-pen')
+    const edicion = tarjeta.querySelector('.icono-edicion')
 
     if(login() == true){
       elimina.style.display="inherit"
