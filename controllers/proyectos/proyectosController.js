@@ -1,4 +1,5 @@
 import { serviceInformacion } from "../../service/proyectosService.js";
+import { login } from "../usuario/usuarioRegtistrado.js";
 
 const traerProyecto = (titulo, descripcion, url, img, id) => {
 
@@ -21,7 +22,16 @@ const traerProyecto = (titulo, descripcion, url, img, id) => {
     article.innerHTML = contenido
 
     const eliminar = article.querySelector('.trash')
+    const edicion = article.querySelector('.fa-pen')
 
+    if(login() == true){
+        eliminar.style.display="inherit"
+        eliminar.style.display="inherit"
+      }else{
+          eliminar.style.display="none"
+          edicion.style.display="none"
+      }
+   
     eliminar.addEventListener('click', ()=>{
 
     const id= eliminar.id
@@ -29,6 +39,8 @@ const traerProyecto = (titulo, descripcion, url, img, id) => {
             window.location.href = 'http://127.0.0.1:5500/index.html'
         })
     })
+
+    
    
     return article
 

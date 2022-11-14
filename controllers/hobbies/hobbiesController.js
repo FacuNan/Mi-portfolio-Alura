@@ -1,4 +1,5 @@
 import { serviceHobbies } from "../../service/hobbiesService.js"
+import { login } from "../usuario/usuarioRegtistrado.js"
 
 const agregarLinea = (id, img, hobbie) => {
     const tarjeta = document.createElement('li')
@@ -11,7 +12,16 @@ const agregarLinea = (id, img, hobbie) => {
     tarjeta.innerHTML = contenido
 
     const elimina = tarjeta.querySelector('.trash')
-    
+    const edicion = tarjeta.querySelector('.fa-pen')
+
+    if(login() == true){
+      elimina.style.display="inherit"
+        edicion.style.display="inherit"
+      }else{
+        elimina.style.display="none"
+          edicion.style.display="none"
+      }
+
 
   elimina.addEventListener('click', ()=>{
     const identificador = elimina.id

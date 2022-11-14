@@ -1,20 +1,26 @@
 import { serviceUsuario } from "../../service/usuario.js"
 
+
+
 const botones = document.querySelectorAll('[data-agregar]')
-console.log(botones)
+var logeado=''
 
-const login = () => {
+export const login = () => {
+   serviceUsuario.verificarUsuario().then((usuarios) => {
+        usuarios.forEach(({ registro }) => {
 
-    serviceUsuario.verificarUsuario().then((data)=>{
-        data.forEach(({registro})=>{
-            if(registro== true){
-                botones.forEach((boton)=>{
-                   boton.style.display='inherit'
-                })
-            }
+            logeado = registro
+            
+        
         })
+
+
     })
+    
+    return logeado
+
+
 }
+console.log(logeado)
 
-
-login()
+console.log(login())

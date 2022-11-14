@@ -1,4 +1,5 @@
 import { informacionProyectos } from "../../service/formacionService.js"
+import { login } from "../usuario/usuarioRegtistrado.js";
 
 const crearFormacion = (id, img, formacion)=>{
 
@@ -17,6 +18,16 @@ const crearFormacion = (id, img, formacion)=>{
 formaciones.innerHTML=contenido
 
 const btn = formaciones.querySelector(".trash")
+const edicion= formaciones.querySelector(".fa-pen")
+
+if(login() == true){
+    btn.style.display="inherit"
+    edicion.style.display="inherit"
+  }else{
+      btn.style.display="none"
+      edicion.style.display="none"
+  }
+
 
 btn.addEventListener('click', ()=>{
     const id = btn.id

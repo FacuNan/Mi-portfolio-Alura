@@ -6,7 +6,7 @@
       "username": "Facu1991",
       "password": "Ledzeppelin2016",
       "confirmarPassword": "Ledzeppelin2016",
-      "registro": false
+      "registro": true
     }
   ],
   "perfil": [
@@ -54,7 +54,7 @@
       "id": "8aa8cbac-a1f2-4896-84df-2e25c04893e0"
     },
     {
-      "formacion": "Media 27",
+      "formacion": "Media",
       "img": "link",
       "id": "f7c6c42a-c021-4d18-9b4b-857bd1e726d1"
     }

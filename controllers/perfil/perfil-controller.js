@@ -1,16 +1,26 @@
 import { informacionPerfil } from "../../service/service-perfil.js";
+import { login } from "../usuario/usuarioRegtistrado.js";
 
 
 
 const infoHTML = (id, nombre, apellido, descripcion) => {
 
     const li = document.querySelector('[data-li]');
-    const btn = ` <li ><a href="http://127.0.0.1:5500/Perfil(Html)/editarPerfil.html?id=${id}"><i class='fa fa-pen'></i></a></li>`
+    const btn = ` <li><a href="http://127.0.0.1:5500/Perfil(Html)/editarPerfil.html?id=${id}"><i class='fa fa-pen'></i></a></li>`
+
+    const edicion = btn.querySelector('.fa-pen')
+
+    if(login() == true){
+       
+        edicion.style.display="inehrit"
+      }else{
+         
+          edicion.style.display="none"
+      }
 
 
     li.innerHTML = btn;
-
-
+  
 
     const contenido = `<h1>Mi nombre es ${nombre} ${apellido}</h1>
 <p>${descripcion}</p>`
@@ -20,6 +30,8 @@ const infoHTML = (id, nombre, apellido, descripcion) => {
 
     return biografia
 }
+
+
 
 const fotoPerfil = (id, img) => {
     const dataPerfil = document.querySelector('[data-foto-perfil]')
