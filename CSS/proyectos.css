@@ -20,8 +20,14 @@
     width: 800px;
     height: 206px;
     margin: 10px 20px;
-    box-shadow: 10px 10px 8px 5px #000;
+    transition: all 500ms ease-out;
 
+}
+
+.proyectos__informacion:hover{
+    box-shadow: 10px 10px 8px 5px #000;
+    width: 820px;
+    cursor:pointer;
 }
 
 .proyectos__imagen {
@@ -42,7 +48,7 @@
 
     position: relative;
     width: 40%;
-    background-color: darkgrey;
+    background:url(https://img.freepik.com/vector-gratis/vector-fondo-acuarela-floral-primavera-verde-ilustracion-hoja_53876-126350.jpg)
 }
 
 .btn-edicion {

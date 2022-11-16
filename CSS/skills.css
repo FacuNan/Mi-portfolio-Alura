@@ -26,23 +26,30 @@
 .skills-li {
     margin: 10px 5px;
     width: 200px;
-    height: 200px;
+    height:200px;
     position: relative;
+
 }
 
 .skills-habilidad {
     width: 100%;
+    height: 100%;
     background-color: lightblue;
     display: flex;
     flex-direction: column;
     align-items: center;
+
  
 }
 
 .skills-habilidad img{
    width:100px;
   
+  
 }
+
+
+
 
 
 

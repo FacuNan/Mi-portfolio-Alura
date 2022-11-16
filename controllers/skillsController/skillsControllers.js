@@ -6,13 +6,14 @@ const estructuraLista = (skill, img, id) => {
     const li = document.createElement('li');
     li.classList.add('skills-li')
     const contenido =
-        `<article class="skills-habilidad">
-        <div class="btn-edicion">
-    <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
-    <a class="icono-edicion btn btn-info"href='http://127.0.0.1:5500/editarSkill.html?id=${id}'><i class='fa fa-pen edit'></i></a>
-    </div>
+        `<div class="capa"> <div class="btn-edicion">
+        <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}' ></i>
+        <a class="icono-edicion btn btn-info"href='http://127.0.0.1:5500/editarSkill.html?id=${id}'><i class='fa fa-pen edit'></i></a>
+        </div> <h3>${skill}</h3></div>
+        <article class="skills-habilidad">
+       
     <img src ="${img}">
-    <h1>${skill}</h1>
+   
 </article>`
 
     li.innerHTML = contenido;

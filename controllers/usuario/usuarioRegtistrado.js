@@ -9,6 +9,7 @@ export const login = () => {
     serviceUsuario.verificarUsuario().then((usuarios) => {
         usuarios.forEach(({ registro }) => {
             logeado = registro
+
         })
 
 
@@ -19,7 +20,10 @@ export const login = () => {
 }
 
 
+
 login()
+
+
 
 
 

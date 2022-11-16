@@ -13,10 +13,22 @@ const infoHTML = (id, nombre, apellido, descripcion) => {
     li.innerHTML = btn;
     const logeo = document.querySelector('[data-login]')
     const logout = document.querySelector('[data-logout]')
+    const agregar =document.querySelectorAll('[data-agregar]')
+    
+    agregar.forEach((boton)=>{
+        if(login()== true){
+            boton.style.display ="inherit"
+        }else{
+            boton.style.display = "none"
+        }
+    })
+
+
     if (login() == true) {
         li.style.display = "inherit"
         logeo.style.display = "none"
         logout.style.display = "inherit"
+        
     } else {
         li.style.display = "none"
         logeo.style.display = "inherit"

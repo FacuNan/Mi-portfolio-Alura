@@ -5,11 +5,12 @@ const agregarLinea = (id, img, hobbie) => {
     const tarjeta = document.createElement('li')
     tarjeta.classList.add('hobbies__contenido-items')
     const contenido = `
-    <div class="btn-edicion">
+    <div class="capa"> <div class="btn-edicion">
     <i class="fas fa-trash-alt trashIcon icon trashIcon btn btn-outline-danger trash"id='${id}'></i>
-    <a class="icono-edicion btn btn-info"href='http://127.0.0.1:5500/Formularios/Edicion/editarHobbie.html?id=${id}'><i class='fa fa-pen edit'></i></a></div>
+    <a class="icono-edicion btn btn-info"href='http://127.0.0.1:5500/Formularios/Edicion/editarHobbie.html?id=${id}'><i class='fa fa-pen edit'></i></a></div> <h3>${hobbie}</h3></div>
+   
     <img src="${img}" alt="">
-    <h3>${hobbie}</h3>`
+   `
 
     tarjeta.innerHTML = contenido
 

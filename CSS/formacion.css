@@ -3,32 +3,34 @@
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
     --cor-de-link: #000;
-    --background:#EAF2FD;
+    --background: #EAF2FD;
 }
 
-.formacion{
+.formacion {
     background-color: var(--background);
-   text-align: center;
-   padding-top: 20px;
-   margin-top: 5px;
-   display: grid;
-   width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 5px;
+    display: grid;
+    width: 100%;
 
 }
 
 
-.formacion__lista{
+.formacion__lista {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
- 
+    height: 100%;
+    
 }
 
-.formacion__lista__cursos{
-    border: blue solid;
+.formacion__lista__cursos {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HhFsMvVntKbZ3V4kpkJ9kj3C-5efM5hIIkxgM91FOgArQrxfoUoXvya8ArimlpKfpEQ&usqp=CAU);
     width: 200px;
+    height: 200px;
     margin: 10px 10px;
     position: relative;
+    
 }
-

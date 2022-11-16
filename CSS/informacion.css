@@ -12,9 +12,13 @@
     text-align: center;
     align-items: center;
     display: flex;
-    padding: 20px;
-    height: 70vh;
-   
+    flex-direction: row-reverse;
+    padding: 30px;
+    height: calc(110vh - 80px);
+    background: url(https://static-cse.canva.com/blob/665901/1600w-RdccdYiYmHI.jpg) no-repeat;
+    background-size: cover;
+    z-index: 0;
+
 }
 
 .informacion-fotoPerfil_img {
@@ -24,9 +28,21 @@
     border: whitesmoke solid;
 }
 
+.informacion-fotoPerfil_img:hover {
+    width: 270px;
+    height: 270px;
+    cursor:pointer;
+}
+
+.biografia__redesSociales {
+    color: #F5F5F5;
+    padding: 20px;
+}
+
 .informacion-biografia {
+
     justify-content: center;
-    color:#F5F5F5;
+
 }
 
 
@@ -34,6 +50,7 @@
     margin-top: 30px;
     width: 60%;
     margin-left: 100px;
+    z-index: 5;
 
 }
 
@@ -42,19 +59,19 @@
     list-style: none;
     justify-content: space-around;
 
+
 }
 
 .informacion-redesSociales_lista {
-
     font-weight: 500;
     font-family: 'Raleway';
     font-style: normal;
-
 }
 
 .informacion-redesSociales_lista:hover {
-    border-bottom: red solid;
     cursor: pointer;
+    width:60px;
+    height:60px;
 }
 
 @media(max-width:600px) {
