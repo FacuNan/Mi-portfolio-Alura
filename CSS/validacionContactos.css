@@ -1,0 +1,60 @@
+.input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+  }
+
+  .input-container--invalid {
+    margin-bottom: 0.5rem;
+  }
+
+  .input-container--invalid .input {
+    border: 1px solid red;
+    border-radius: 7px;
+  }
+
+
+  .input-message-error {
+    display: none;
+  }
+
+  
+.input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .textarea:focus {
+    outline: none;
+  }
+
+  .textarea:not(:placeholder-shown) + .textarea-label,
+.textarea:focus + .textarea-label {
+  font-size: 0.875rem;
+  top: -1.25rem;
+  transition: all 0.25s;
+}
+
+.textarea-container--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalid .textarea {
+  border: 1px solid red;
+}
+
+.textarea-container--invalid .textarea-label {
+  color: red;
+}
+
+.textarea-mensagem-erro {
+  display: none;
+}
+
+.textarea-container--invalid .textarea-mensagem-erro {
+  display: block;
+  color: var(--warning-color);
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}

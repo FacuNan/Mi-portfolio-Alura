@@ -17,7 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/contactos.css">
+<link rel="stylesheet" href="./CSS/validacionContactos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/hobbies.css">
 </head>
@@ -27,7 +28,9 @@
         <section class="menu">
             <div class="menu-contenido">
 
-                <p class="menu-contenido__nombre">Descarga mi cv <a href="Facundo Comercio 2 (1).pdf" download="Portfolio Facundo Comercio" title="Descargar proyecto" class="btn-descarga"><img src="https://c.tenor.com/c3ca_9IHdxIAAAAC/cafe-coffee.gif" alt="" width="50px"></a></p>
+                <p class="menu-contenido__nombre">Descarga mi cv <a href="Facundo Comercio 2 (1).pdf"
+                        download="Portfolio Facundo Comercio" title="Descargar proyecto" class="btn-descarga"><img
+                            src="https://c.tenor.com/c3ca_9IHdxIAAAAC/cafe-coffee.gif" alt="" width="50px"></a></p>
 
                 <nav class="menu-nav">
                     <ul class="menu-nav_ul" data-menu>
@@ -42,7 +45,7 @@
                                         class="fa-solid fa-right-to-bracket"></i></button></a></li>
                         <li data-logout><button class=" btn btn-outline-danger"><i
                                     class="fa-solid fa-right-to-bracket"></i></button></li>
-                                    
+
                         <li data-li></li>
                     </ul>
                 </nav>
@@ -57,30 +60,30 @@
 
             </div>
             <div class="biografia__redesSociales">
-             
-            <div class="informacion-biografia" data-biografia>
 
-                
-            </div>
-            <nav class="informacion-redesSociales_nav">
-                <ul class="informacion-redesSociales_ul">
-                    <li class="informacion-redesSociales_lista"><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"
-                            width="30px">
-                    </li>
-                    <li class="informacion-redesSociales_lista"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCoDLt7rsHPy8eep2ITgUx26XnikxPoOZnoh6Z59cyIg&s"
-                            width="30px">
-                    </li>
-                    <li class="informacion-redesSociales_lista"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHm9irhzoSLh0lEZzKuhjkv257fuy7bIInVEYZUazVEA&s"
-                            width="30px">
-                    </li>
-                    <li class="informacion-redesSociales_lista"><img
-                            src="https://cdn-icons-png.flaticon.com/512/889/889192.png" width="40px">
-                    </li>
-                </ul>
-            </nav>
+                <div class="informacion-biografia" data-biografia>
+
+
+                </div>
+                <nav class="informacion-redesSociales_nav">
+                    <ul class="informacion-redesSociales_ul">
+                        <li class="informacion-redesSociales_lista"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"
+                                width="30px">
+                        </li>
+                        <li class="informacion-redesSociales_lista"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCoDLt7rsHPy8eep2ITgUx26XnikxPoOZnoh6Z59cyIg&s"
+                                width="30px">
+                        </li>
+                        <li class="informacion-redesSociales_lista"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHm9irhzoSLh0lEZzKuhjkv257fuy7bIInVEYZUazVEA&s"
+                                width="30px">
+                        </li>
+                        <li class="informacion-redesSociales_lista"><img
+                                src="https://cdn-icons-png.flaticon.com/512/889/889192.png" width="40px">
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </section>
 
@@ -126,8 +129,8 @@
         <section class="formacion" id="formacion">
 
             <h1 class="formacion__titulo">Formacion</h1>
-            <a href="http://127.0.0.1:5500/Formularios/agregar/agregarFormacion.html"><input type="button"
-                    value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
+            <a href="http://127.0.0.1:5500/Formularios/agregar/agregarFormacion.html">
+                <input type="button" value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
             </a>
 
 
@@ -147,10 +150,48 @@
 
 
         </section>
+
+        <section class="contactos">
+            <h2>Contactame</h2>
+            <form action="" class="formulario">
+                <fieldset>
+                <div class="input">
+                    
+                    <label class="input-label"for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" class="input input-padron" placeholder="Nombre y Apellido" data-tipo="nombre"  required  pattern="[A-Za-z]{4,50}">
+                    <span class="input-message-error"></span>
+                   
+                        
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input input-padron" placeholder="Email" required data-tipo="email">
+                    <span class="input-message-error"></span>
+                </div>
+
+                <div class="input">
+                    <label for="asunto">Asunto</label>
+                    <input type="telefono" id="asunto" class=" input input-padron" placeholder="asunto" required data-tipo="asunto" pattern="[A-Za-z]{4,50}">
+                    <span class="input-message-error"></span>
+                </div>
+
+                <div class="input">
+                    <span class="input-message-error"></span>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje"  class="input input-padron"
+                        placeholder="Mensaje"   pattern="[A-Za-z]{4,300}" data-tipo="texto"></textarea>
+                     
+                </div>
+            </fieldset>
+                <input type="submit" value="Enviar" class="btn btn-primary enviar" disabled required >
+            </form>
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./Formularios/validaciones/app.js" type="module"></script>
     <script src="./controllers/skillsController/skillsControllers.js" type="module"></script>
     <script src="./controllers/perfil/perfil-controller.js" type="module"></script>
     <script src="./controllers/formacionController/formacionController.js" type="module"></script>
@@ -159,6 +200,8 @@
     <script src="./controllers/usuario/usuarioRegtistrado.js" type="module"></script>
     <script src="./controllers/usuario/logout.js" type="module"></script>
     <script src="https://kit.fontawesome.com/3eb2a5ace8.js" crossorigin="anonymous"></script>
+
+
 
 </body>
 
