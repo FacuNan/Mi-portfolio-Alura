@@ -99,7 +99,6 @@ body {
 .capa{
     width:200px;
     height:200px;
-    border: solid blue;
     position: absolute;
     background-color: rgba(0, 103, 123, 0.7);
     opacity: 0;
