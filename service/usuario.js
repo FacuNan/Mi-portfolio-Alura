@@ -1,9 +1,9 @@
 const verificarUsuario=()=>{
-return fetch ('http://localhost:3000/usuario').then((respuesta)=>respuesta.json())
+return fetch ('https://json-server-96pg.onrender.com/usuario').then((respuesta)=>respuesta.json())
 }
 
 const usuarioRegistrado=(id, email, username, password, confirmarPassword, registro)=>{
-    return fetch(`http://localhost:3000/usuario/${id}`, {
+    return fetch(`https://json-server-96pg.onrender.com/usuario/${id}`, {
         method: 'PUT',
         headers:{'Content-Type': 'application/json'},
         body: JSON.stringify({id, email, username, password, confirmarPassword, registro})

@@ -1,9 +1,9 @@
 const listaHobbies =()=>{
-    return fetch ('http://localhost:3000/hobbies').then((respuesta)=>respuesta.json());
+    return fetch ('https://json-server-96pg.onrender.com/hobbies').then((respuesta)=>respuesta.json());
 }
 
 const agregarHobbie = (img, hobbie)=>{
-return fetch('http://localhost:3000/hobbies', {
+return fetch('https://json-server-96pg.onrender.com/hobbies', {
     method:'POST',
     headers:{
         'Content-Type': 'application/json'
@@ -15,18 +15,18 @@ return fetch('http://localhost:3000/hobbies', {
 }
 
 const deleteHobbie =(id)=>{
-    return fetch(`http://localhost:3000/hobbies/${id}`,{
+    return fetch(`https://json-server-96pg.onrender.com/hobbies/${id}`,{
         method:'DELETE'
     })
 }
 
 const obtenerHobbie =(id)=>{
-    return fetch(`http://localhost:3000/hobbies/${id}`).then((respuesta)=> respuesta.json())
+    return fetch(`https://json-server-96pg.onrender.com/hobbies/${id}`).then((respuesta)=> respuesta.json())
 }
 
 
 const actualizarHobbie = (id, img, hobbie)=>{
-return fetch(`http://localhost:3000/hobbies/${id}`, {
+return fetch(`https://json-server-96pg.onrender.com/hobbies/${id}`, {
     method:'PUT',
     headers:{'Content-Type': 'application/json'},
     body: JSON.stringify({id, img, hobbie})

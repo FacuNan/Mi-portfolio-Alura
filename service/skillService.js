@@ -1,13 +1,13 @@
 
 
 const listaSkills = () => {
- return fetch('http://localhost:3000/skills').then((respuesta)=> 
+ return fetch('https://json-server-96pg.onrender.com/skills').then((respuesta)=> 
  respuesta.json()
  );
 };
 
 const crearSkill = (skill, img) =>{
-return fetch('http://localhost:3000/skills',{
+return fetch('https://json-server-96pg.onrender.com/skills',{
     method:'POST',
     headers:{
         'Content-Type':'application/json'
@@ -21,19 +21,19 @@ return fetch('http://localhost:3000/skills',{
 }
 
 const eliminarSkill = (id) =>{
-    return fetch(`http://localhost:3000/skills/${id}`,{
+    return fetch(`https://json-server-96pg.onrender.com/skills/${id}`,{
         method:'DELETE'
 });
 }
 
 const detallesClientes=(id)=>{
-    return fetch(`http://localhost:3000/skills/${id}`
+    return fetch(`https://json-server-96pg.onrender.com/skills/${id}`
 ).then((respuesta) => respuesta.json()
 );
 }
 
 const actualizarSkill=(skill, img, id)=>{
-    return fetch(`http://localhost:3000/skills/${id}`, {
+    return fetch(`https://json-server-96pg.onrender.com/skills/${id}`, {
         method: 'PUT',
         headers:{
             'Content-Type':'application/json'

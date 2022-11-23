@@ -1,15 +1,15 @@
 
 
 const infoPerfil = () => {
-    return fetch('http://localhost:3000/perfil').then((respuesta) => respuesta.json());
+    return fetch('https://json-server-96pg.onrender.com/perfil').then((respuesta) => respuesta.json());
 }
 
 const detallesPerfil = (id) => {
-    return fetch(`http://localhost:3000/perfil/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`https://json-server-96pg.onrender.com/perfil/${id}`).then((respuesta) => respuesta.json());
 }
 
 const actualizarPerfil = (id, nombre, apellido, img, descripcion) => {
-    return fetch(`http://localhost:3000/perfil/${id}`, {
+    return fetch(`https://json-server-96pg.onrender.com/perfil/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'

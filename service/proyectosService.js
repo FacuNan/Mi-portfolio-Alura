@@ -1,9 +1,9 @@
 const listaProyectos = () => {
-    return fetch('http://localhost:3000/proyectos').then((respuesta) => respuesta.json())
+    return fetch('https://json-server-96pg.onrender.com/proyectos').then((respuesta) => respuesta.json())
 }
 
 const crearProyectos = (titulo, descripcion, url, img) => {
-    return fetch('http://localhost:3000/proyectos', {
+    return fetch('https://json-server-96pg.onrender.com/proyectos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -13,17 +13,17 @@ const crearProyectos = (titulo, descripcion, url, img) => {
 }
 
 const eliminarProyecto = (id)=>{
-    return fetch(`http://localhost:3000/proyectos/${id}`,{
+    return fetch(`https://json-server-96pg.onrender.com/proyectos/${id}`,{
         method:'DELETE'
     })
 }
 
 const obtenerProyecto = (id)=>{
-    return fetch(`http://localhost:3000/proyectos/${id}`).then((respuesta)=> respuesta.json())
+    return fetch(`https://json-server-96pg.onrender.com/proyectos/${id}`).then((respuesta)=> respuesta.json())
 }
 
 const actualizarInformacion = (titulo, descripcion, url, img, id)=>{
-    return fetch(`http://localhost:3000/proyectos/${id}`, {
+    return fetch(`https://json-server-96pg.onrender.com/proyectos/${id}`, {
         method:'PUT',
         headers:{'Content-Type': 'application/json'},
         body: JSON.stringify({titulo, descripcion, url, img, id})

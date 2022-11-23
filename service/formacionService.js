@@ -1,9 +1,9 @@
 const listaFormacion =()=>{
-    return fetch(' http://localhost:3000/formacion').then((respuesta)=> respuesta.json())
+    return fetch(' https://json-server-96pg.onrender.com/formacion').then((respuesta)=> respuesta.json())
 }
 
 const crearFormacion = (formacion, img )=>{
-    return fetch((' http://localhost:3000/formacion'),{
+    return fetch(('https://json-server-96pg.onrender.com/formacion'),{
         method:'POST',
         headers: {'Content-Type': 'application/json'
     },
@@ -13,18 +13,18 @@ const crearFormacion = (formacion, img )=>{
 
 const eliminarFormacion = (id)=>{
 
-    return fetch(`http://localhost:3000/formacion/${id}`, {
+    return fetch(`https://json-server-96pg.onrender.com/formacion/${id}`, {
         method:'DELETE'
     }
     )
 }
 
 const detallesFormacion = (id) =>{
-    return fetch(`http://localhost:3000/formacion/${id}`).then((respuesta)=> respuesta.json());
+    return fetch(`https://json-server-96pg.onrender.com/formacion/${id}`).then((respuesta)=> respuesta.json());
 }
 
 const actualizarFormacion=(formacion, img, id)=>{
-return fetch(`http://localhost:3000/formacion/${id}`, {
+return fetch(`https://json-server-96pg.onrender.com/formacion/${id}`, {
     method:'PUT',
     headers:{'Content-Type':'application/json'},
     body: JSON.stringify({formacion,img,id})
