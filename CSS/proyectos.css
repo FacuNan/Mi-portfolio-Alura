@@ -61,12 +61,20 @@
     }
 
     .proyectos__informacion:hover{
-        width:60px;
+        width:550px;
     }
 
 @media(max-width:600px){
     .proyectos__informacion{
         width:100%;
+    }
+    .proyectos__informacion{
+        width:500px;
+    
+    }
+
+    .proyectos__informacion:hover{
+        width:550px;
     }
 }
 }
