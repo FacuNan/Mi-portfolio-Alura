@@ -44,6 +44,10 @@ body {
     align-items: center;
     font-weight: bold;
 }
+.mobileLogin{
+    border: #000 solid;
+    display: flex;
+}
 
 .menu-contenido__nombre img {
     border-radius: 50%;
@@ -194,10 +198,39 @@ svg:hover {
     color: whitesmoke;
 }
 
+@media (max-width:768px){
+    header{
+        width:100%;
+        }
+    .menu-contenido{
+        justify-content: center;
+        width:60%;
+      
+    }
+    .menu-nav{
+        width:50%;
+    }
 
 @media(max-width:600px) {
-
-    .menu-nav {
-        display: none;
+    header{
+    width:100%;
     }
+    .menu{
+        width:100%;
+    }
+    .menu-contenido{
+        justify-content: center;
+        width:100%;
+    }
+    .menu-nav{
+        width:75%;
+    }
+
+  .menu-nav_ul{
+    width:90%;
+    display: flex;
+    justify-content: center;
+  }
+
+}
 }

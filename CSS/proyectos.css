@@ -54,10 +54,20 @@
 .btn-edicion {
     width: 100%;
 }
+@media(max-width:768px){
 
+    .proyectos__informacion{
+        width:500px;
+    
+    }
+
+    .proyectos__informacion:hover{
+        width:60px;
+    }
 
 @media(max-width:600px){
     .proyectos__informacion{
         width:100%;
     }
+}
 }
