@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/contactos.css">
-<link rel="stylesheet" href="./CSS/validacionContactos.css">
+    <link rel="stylesheet" href="./CSS/validacionContactos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/hobbies.css">
 </head>
@@ -27,18 +27,18 @@
     <header>
         <section class="menu">
             <div class="menu-contenido">
-<div class="dowload-cv">
-                <p class="menu-contenido__nombre">Descarga mi cv <a href="Facundo Comercio 2 (1).pdf"
-                        download="Portfolio Facundo Comercio" title="Descargar proyecto" class="btn-descarga"><img
-                            src="https://c.tenor.com/c3ca_9IHdxIAAAAC/cafe-coffee.gif" alt="" width="50px"></a></p>
-                        </div>
+                <div class="dowload-cv">
+                    <p class="menu-contenido__nombre">Descarga mi cv <a href="Facundo Comercio 2 (1).pdf"
+                            download="Portfolio Facundo Comercio" title="Descargar proyecto" class="btn-descarga"><img
+                                src="https://c.tenor.com/c3ca_9IHdxIAAAAC/cafe-coffee.gif" alt="" width="50px"></a></p>
+                </div>
                 <nav class="menu-nav">
                     <ul class="menu-nav_ul" data-menu>
                         <li class="menu-nav_lista"><a href="#inicio">Inicio</a></li>
                         <li class="menu-nav_lista"><a href="#sobre-mi"> Sobre Mi</a></li>
                         <li class="menu-nav_lista"><a href="#skills">Skills</a></li>
                         <li class="menu-nav_lista"><a href="#hobbies">Hobbies</a></li>
-                        <li class="menu-nav_lista"><a href="#formacion">Formacion</a></li>
+                        <li class="menu-nav_lista"><a href="#formaciones">Formacion</a></li>
                         <li class="menu-nav_lista"><a href="#proyectos">Proyectos</a></li>
                         <li class="menu-nav_lista"><a href="#footer"> Footer</a></li>
                         <li data-login><a href="./login.html"><button class=" btn btn-outline-primary"><i
@@ -126,11 +126,13 @@
 
         </section>
 
-        <section class="formacion" id="formacion">
+        <section class="formacion" id="formaciones">
+
 
             <h1 class="formacion__titulo">Formacion</h1>
-            <a href="http://127.0.0.1:5500/Formularios/agregar/agregarFormacion.html">
-                <input type="button" value="agregar" class="skills-nav_button-agregar btn btn-info login " data-agregar>
+            <a class="link"href="http://127.0.0.1:5500/Formularios/agregar/agregarFormacion.html">
+                <input type="button" value="agregar" class="formacion-nav_button-agregar btn btn-info login "
+                    data-agregar>
             </a>
 
 
@@ -155,36 +157,39 @@
             <h2>Contactame</h2>
             <form action="" class="formulario">
                 <fieldset>
-                <div class="input">
-                    
-                    <label class="input-label"for="nombre">Nombre y apellido</label>
-                    <input type="text" id="nombre" class="input input-padron" placeholder="Nombre y Apellido" data-tipo="nombre"  required  pattern="[A-Za-z]{4,50}">
-                    <span class="input-message-error"></span>
-                   
-                        
-                </div>
+                    <div class="input">
 
-                <div class="input">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" class="input input-padron" placeholder="Email" required data-tipo="email">
-                    <span class="input-message-error"></span>
-                </div>
+                        <label class="input-label" for="nombre">Nombre y apellido</label>
+                        <input type="text" id="nombre" class="input input-padron" placeholder="Nombre y Apellido"
+                            data-tipo="nombre" required pattern="[A-Za-z]{4,50}">
+                        <span class="input-message-error"></span>
 
-                <div class="input">
-                    <label for="asunto">Asunto</label>
-                    <input type="telefono" id="asunto" class=" input input-padron" placeholder="asunto" required data-tipo="asunto" pattern="[A-Za-z]{4,50}">
-                    <span class="input-message-error"></span>
-                </div>
 
-                <div class="input">
-                    <span class="input-message-error"></span>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje"  class="input input-padron"
-                        placeholder="Mensaje"   pattern="[A-Za-z]{4,300}" data-tipo="texto"></textarea>
-                     
-                </div>
-            </fieldset>
-                <input type="submit" value="Enviar" class="btn btn-primary enviar" disabled required >
+                    </div>
+
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="input input-padron" placeholder="Email" required
+                            data-tipo="email">
+                        <span class="input-message-error"></span>
+                    </div>
+
+                    <div class="input">
+                        <label for="asunto">Asunto</label>
+                        <input type="telefono" id="asunto" class=" input input-padron" placeholder="asunto" required
+                            data-tipo="asunto" pattern="[A-Za-z]{4,50}">
+                        <span class="input-message-error"></span>
+                    </div>
+
+                    <div class="input">
+                        <span class="input-message-error"></span>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" class="input input-padron" placeholder="Mensaje"
+                            pattern="[A-Za-z]{4,300}" data-tipo="texto"></textarea>
+
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar" class="btn btn-primary enviar" disabled required>
             </form>
         </section>
     </main>
