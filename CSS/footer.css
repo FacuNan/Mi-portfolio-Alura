@@ -1,0 +1,29 @@
+.footer{
+    background: url(https://static-cse.canva.com/blob/665901/1600w-RdccdYiYmHI.jpg) no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer p{
+    color:white;
+}
+
+.footer h1{
+    color: white;
+}
+.footer__gif{
+    height:40vh;
+    width: 100%;
+}
+
+.footer .informacion-redesSociales_nav{
+    text-align: center;
+    margin: 10px;
+    width: 90%;
+
+}
