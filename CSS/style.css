@@ -212,8 +212,12 @@ svg:hover {
     }
 
 @media(max-width:600px) {
+
     header{
     width:100%;
+    }
+    .dowload-cv{
+        display:none;
     }
     .menu{
         width:100%;
@@ -223,11 +227,11 @@ svg:hover {
         width:100%;
     }
     .menu-nav{
-        width:75%;
+        width:100%;
     }
 
   .menu-nav_ul{
-    width:90%;
+    width:100%;
     display: flex;
     justify-content: center;
   }
